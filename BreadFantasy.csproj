@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D457F0BC-9128-4B34-8C80-6356BC4AA5AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BreadFantasy</RootNamespace>
+    <AssemblyName>BreadFantasy</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Contracts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Contracts.Designer.cs">
+      <DependentUpon>Contracts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Contracts_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Contracts_Edit.Designer.cs">
+      <DependentUpon>Contracts_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Customers_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Customers_Edit.Designer.cs">
+      <DependentUpon>Customers_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Employees.Designer.cs">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Employees_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Employees_Edit.Designer.cs">
+      <DependentUpon>Employees_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Orders_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Orders_Edit.Designer.cs">
+      <DependentUpon>Orders_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Products_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Products_Edit.Designer.cs">
+      <DependentUpon>Products_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Row_material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Row_material.Designer.cs">
+      <DependentUpon>Row_material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Row_material_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Row_material_Edit.Designer.cs">
+      <DependentUpon>Row_material_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Salary.Designer.cs">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Salary_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Salary_Edit.Designer.cs">
+      <DependentUpon>Salary_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth.Designer.cs">
+      <DependentUpon>Auth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BreadFantasyDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BreadFantasyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExitApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitApplication.Designer.cs">
+      <DependentUpon>ExitApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polsovatel\Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polsovatel\Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polsovatel\Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polsovatel\Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polsovatel\Orders_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polsovatel\Orders_Edit.Designer.cs">
+      <DependentUpon>Orders_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polsovatel\Raw_material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polsovatel\Raw_material.Designer.cs">
+      <DependentUpon>Raw_material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polsovatel\Report_Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polsovatel\Report_Orders.Designer.cs">
+      <DependentUpon>Report_Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polsovatel\Report_Row_materian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polsovatel\Report_Row_materian.Designer.cs">
+      <DependentUpon>Report_Row_materian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polsovatel\Row_material_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polsovatel\Row_material_Edit.Designer.cs">
+      <DependentUpon>Row_material_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Suppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Suppliers.Designer.cs">
+      <DependentUpon>Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Suppliers_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Suppliers_Edit.Designer.cs">
+      <DependentUpon>Suppliers_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Contracts.resx">
+      <DependentUpon>Contracts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Contracts_Edit.resx">
+      <DependentUpon>Contracts_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Customers_Edit.resx">
+      <DependentUpon>Customers_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Employees.resx">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Employees_Edit.resx">
+      <DependentUpon>Employees_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Orders.resx">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Orders_Edit.resx">
+      <DependentUpon>Orders_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Products_Edit.resx">
+      <DependentUpon>Products_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Row_material.resx">
+      <DependentUpon>Row_material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Row_material_Edit.resx">
+      <DependentUpon>Row_material_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Salary.resx">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Salary_Edit.resx">
+      <DependentUpon>Salary_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auth.resx">
+      <DependentUpon>Auth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitApplication.resx">
+      <DependentUpon>ExitApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polsovatel\Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polsovatel\Orders.resx">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polsovatel\Orders_Edit.resx">
+      <DependentUpon>Orders_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polsovatel\Raw_material.resx">
+      <DependentUpon>Raw_material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polsovatel\Report_Row_materian.rdlc" />
+    <EmbeddedResource Include="Polsovatel\Report_Orders.rdlc" />
+    <EmbeddedResource Include="Polsovatel\Report_Orders.resx">
+      <DependentUpon>Report_Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polsovatel\Report_Row_materian.resx">
+      <DependentUpon>Report_Row_materian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polsovatel\Row_material_Edit.resx">
+      <DependentUpon>Row_material_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Suppliers.resx">
+      <DependentUpon>Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Suppliers_Edit.resx">
+      <DependentUpon>Suppliers_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BreadFantasyDataSet.xsc">
+      <DependentUpon>BreadFantasyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BreadFantasyDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BreadFantasyDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BreadFantasyDataSet.xss">
+      <DependentUpon>BreadFantasyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\пекарь с пицей.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон приложения.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\пекарь и печенье.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон проги.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\пекарь и кексики.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\пекарь и кексики1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон проги %28ред%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
