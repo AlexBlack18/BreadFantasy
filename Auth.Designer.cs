@@ -54,7 +54,7 @@
             // password
             // 
             this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.password.Location = new System.Drawing.Point(427, 332);
+            this.password.Location = new System.Drawing.Point(423, 332);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(205, 27);
             this.password.TabIndex = 2;
@@ -67,7 +67,7 @@
             this.button1.FlatAppearance.BorderSize = 5;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(457, 408);
+            this.button1.Location = new System.Drawing.Point(453, 408);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(135, 47);
             this.button1.TabIndex = 3;
@@ -81,6 +81,7 @@
             this.back.BackgroundImage = global::BreadFantasy.Properties.Resources.back;
             this.back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.back.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.back.FlatAppearance.BorderSize = 0;
             this.back.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -135,7 +136,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(415, 206);
+            this.label4.Location = new System.Drawing.Point(411, 206);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(215, 32);
             this.label4.TabIndex = 8;
@@ -154,7 +155,7 @@
             this.checkBox1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox1.Image = ((System.Drawing.Image)(resources.GetObject("checkBox1.Image")));
-            this.checkBox1.Location = new System.Drawing.Point(645, 333);
+            this.checkBox1.Location = new System.Drawing.Point(641, 333);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(25, 25);
             this.checkBox1.TabIndex = 0;
@@ -167,7 +168,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(371, 280);
+            this.pictureBox2.Location = new System.Drawing.Point(367, 280);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -178,7 +179,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(371, 326);
+            this.pictureBox3.Location = new System.Drawing.Point(367, 326);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 40);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -188,7 +189,7 @@
             // login
             // 
             this.login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.login.Location = new System.Drawing.Point(427, 286);
+            this.login.Location = new System.Drawing.Point(423, 286);
             this.login.Multiline = true;
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(205, 27);
@@ -204,9 +205,11 @@
             // 
             // Auth
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.CancelButton = this.back;
             this.ClientSize = new System.Drawing.Size(984, 656);
             this.Controls.Add(this.FocusBut);
             this.Controls.Add(this.login);

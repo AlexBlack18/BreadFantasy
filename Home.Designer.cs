@@ -77,6 +77,7 @@
             // exit
             // 
             this.exit.BackColor = System.Drawing.Color.Transparent;
+            this.exit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.exit.FlatAppearance.BorderSize = 5;
             this.exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -122,9 +123,11 @@
             // 
             // Home
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.CancelButton = this.exit;
             this.ClientSize = new System.Drawing.Size(984, 656);
             this.ControlBox = false;
             this.Controls.Add(this.btnFocus);
