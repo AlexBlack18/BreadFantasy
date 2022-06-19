@@ -68,5 +68,12 @@ namespace BreadFantasy.Polsovatel
         {
             customersBindingSource.MovePrevious();
         }
+
+        private void report_Click(object sender, EventArgs e)
+        {
+            Report_Customers report_Customers = new Report_Customers();
+            report_Customers.Show();
+            this.Close();
+        }
     }
 }

@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
+    <PublishUrl>C:\Users\oumar\Downloads\BreadFantasy\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -23,9 +23,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -49,6 +51,18 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F50718429B0F8EF9EFE7DFC1350B5A2E4BDD93F6</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>BreadFantasy_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
@@ -229,17 +243,17 @@
     <Compile Include="Polsovatel\Raw_material.Designer.cs">
       <DependentUpon>Raw_material.cs</DependentUpon>
     </Compile>
+    <Compile Include="Polsovatel\Report_Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polsovatel\Report_Customers.Designer.cs">
+      <DependentUpon>Report_Customers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Polsovatel\Report_Orders.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Polsovatel\Report_Orders.Designer.cs">
       <DependentUpon>Report_Orders.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Polsovatel\Report_Row_materian.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Polsovatel\Report_Row_materian.Designer.cs">
-      <DependentUpon>Report_Row_materian.cs</DependentUpon>
     </Compile>
     <Compile Include="Polsovatel\Row_material_Edit.cs">
       <SubType>Form</SubType>
@@ -337,13 +351,13 @@
     <EmbeddedResource Include="Polsovatel\Raw_material.resx">
       <DependentUpon>Raw_material.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Polsovatel\Report_Row_materian.rdlc" />
+    <EmbeddedResource Include="Polsovatel\Report_Customers.rdlc" />
+    <EmbeddedResource Include="Polsovatel\Report_Customers.resx">
+      <DependentUpon>Report_Customers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Polsovatel\Report_Orders.rdlc" />
     <EmbeddedResource Include="Polsovatel\Report_Orders.resx">
       <DependentUpon>Report_Orders.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Polsovatel\Report_Row_materian.resx">
-      <DependentUpon>Report_Row_materian.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Polsovatel\Row_material_Edit.resx">
       <DependentUpon>Row_material_Edit.cs</DependentUpon>
@@ -378,6 +392,7 @@
     <None Include="BreadFantasyDataSet.xss">
       <DependentUpon>BreadFantasyDataSet.xsd</DependentUpon>
     </None>
+    <None Include="BreadFantasy_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -56,6 +56,7 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.report = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.breadFantasyDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
@@ -72,7 +73,7 @@
             this.lastnext.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.lastnext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lastnext.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lastnext.Location = new System.Drawing.Point(600, 586);
+            this.lastnext.Location = new System.Drawing.Point(526, 586);
             this.lastnext.Margin = new System.Windows.Forms.Padding(2);
             this.lastnext.Name = "lastnext";
             this.lastnext.Size = new System.Drawing.Size(87, 33);
@@ -89,7 +90,7 @@
             this.next.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.next.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.next.Location = new System.Drawing.Point(501, 586);
+            this.next.Location = new System.Drawing.Point(427, 586);
             this.next.Margin = new System.Windows.Forms.Padding(2);
             this.next.Name = "next";
             this.next.Size = new System.Drawing.Size(95, 33);
@@ -106,7 +107,7 @@
             this.last.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.last.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.last.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.last.Location = new System.Drawing.Point(399, 586);
+            this.last.Location = new System.Drawing.Point(325, 586);
             this.last.Margin = new System.Windows.Forms.Padding(2);
             this.last.Name = "last";
             this.last.Size = new System.Drawing.Size(98, 33);
@@ -123,7 +124,7 @@
             this.first.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.first.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.first.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.first.Location = new System.Drawing.Point(308, 586);
+            this.first.Location = new System.Drawing.Point(234, 586);
             this.first.Margin = new System.Windows.Forms.Padding(2);
             this.first.Name = "first";
             this.first.Size = new System.Drawing.Size(87, 33);
@@ -345,6 +346,23 @@
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
             this.dataGridViewTextBoxColumn5.Width = 150;
             // 
+            // report
+            // 
+            this.report.BackColor = System.Drawing.Color.Transparent;
+            this.report.FlatAppearance.BorderSize = 5;
+            this.report.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.report.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.report.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.report.Location = new System.Drawing.Point(637, 586);
+            this.report.Margin = new System.Windows.Forms.Padding(2);
+            this.report.Name = "report";
+            this.report.Size = new System.Drawing.Size(118, 33);
+            this.report.TabIndex = 118;
+            this.report.Text = "Отчет";
+            this.report.UseVisualStyleBackColor = false;
+            this.report.Click += new System.EventHandler(this.report_Click);
+            // 
             // Customers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -352,6 +370,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(984, 656);
+            this.Controls.Add(this.report);
             this.Controls.Add(this.customersDataGridView);
             this.Controls.Add(this.customersBindingNavigator);
             this.Controls.Add(this.back);
@@ -405,5 +424,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.Button report;
     }
 }

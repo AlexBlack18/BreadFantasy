@@ -61,7 +61,6 @@
             this.save = new System.Windows.Forms.Button();
             this.add = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
-            this.report = new System.Windows.Forms.Button();
             this.lastnext = new System.Windows.Forms.Button();
             this.next = new System.Windows.Forms.Button();
             this.last = new System.Windows.Forms.Button();
@@ -341,7 +340,7 @@
             this.save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.save.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.save.Location = new System.Drawing.Point(507, 545);
+            this.save.Location = new System.Drawing.Point(507, 584);
             this.save.Margin = new System.Windows.Forms.Padding(2);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(192, 33);
@@ -358,7 +357,7 @@
             this.add.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.add.Location = new System.Drawing.Point(311, 545);
+            this.add.Location = new System.Drawing.Point(311, 584);
             this.add.Margin = new System.Windows.Forms.Padding(2);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(192, 33);
@@ -385,23 +384,6 @@
             this.back.UseVisualStyleBackColor = false;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
-            // report
-            // 
-            this.report.BackColor = System.Drawing.Color.Transparent;
-            this.report.FlatAppearance.BorderSize = 5;
-            this.report.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.report.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.report.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.report.Location = new System.Drawing.Point(409, 585);
-            this.report.Margin = new System.Windows.Forms.Padding(2);
-            this.report.Name = "report";
-            this.report.Size = new System.Drawing.Size(192, 33);
-            this.report.TabIndex = 117;
-            this.report.Text = "Отчет";
-            this.report.UseVisualStyleBackColor = false;
-            this.report.Click += new System.EventHandler(this.report_Click);
-            // 
             // lastnext
             // 
             this.lastnext.BackColor = System.Drawing.Color.Transparent;
@@ -410,7 +392,7 @@
             this.lastnext.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.lastnext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lastnext.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lastnext.Location = new System.Drawing.Point(605, 504);
+            this.lastnext.Location = new System.Drawing.Point(605, 543);
             this.lastnext.Margin = new System.Windows.Forms.Padding(2);
             this.lastnext.Name = "lastnext";
             this.lastnext.Size = new System.Drawing.Size(94, 33);
@@ -427,7 +409,7 @@
             this.next.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.next.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.next.Location = new System.Drawing.Point(507, 504);
+            this.next.Location = new System.Drawing.Point(507, 543);
             this.next.Margin = new System.Windows.Forms.Padding(2);
             this.next.Name = "next";
             this.next.Size = new System.Drawing.Size(94, 33);
@@ -444,7 +426,7 @@
             this.last.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.last.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.last.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.last.Location = new System.Drawing.Point(409, 504);
+            this.last.Location = new System.Drawing.Point(409, 543);
             this.last.Margin = new System.Windows.Forms.Padding(2);
             this.last.Name = "last";
             this.last.Size = new System.Drawing.Size(94, 33);
@@ -461,7 +443,7 @@
             this.first.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.first.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.first.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.first.Location = new System.Drawing.Point(311, 504);
+            this.first.Location = new System.Drawing.Point(311, 543);
             this.first.Margin = new System.Windows.Forms.Padding(2);
             this.first.Name = "first";
             this.first.Size = new System.Drawing.Size(94, 33);
@@ -481,7 +463,6 @@
             this.Controls.Add(this.save);
             this.Controls.Add(this.add);
             this.Controls.Add(this.back);
-            this.Controls.Add(this.report);
             this.Controls.Add(this.lastnext);
             this.Controls.Add(this.next);
             this.Controls.Add(this.last);
@@ -543,7 +524,6 @@
         private System.Windows.Forms.Button save;
         private System.Windows.Forms.Button add;
         private System.Windows.Forms.Button back;
-        private System.Windows.Forms.Button report;
         private System.Windows.Forms.Button lastnext;
         private System.Windows.Forms.Button next;
         private System.Windows.Forms.Button last;

@@ -64,13 +64,6 @@ namespace BreadFantasy.Polsovatel
             this.tableAdapterManager.UpdateAll(this.breadFantasyDataSet);
         }
 
-        private void report_Click(object sender, EventArgs e)
-        {
-            Report_Row_materian report_Row_Materian = new Report_Row_materian();
-            report_Row_Materian.Show();
-            this.Close();
-        }
-
         private void back_Click(object sender, EventArgs e)
         {
             User user = new User();
