@@ -19,7 +19,7 @@ namespace BreadFantasy.Polsovatel
 
         private void back_Click(object sender, EventArgs e)
         {
-            User user = new User();
+            Admin user = new Admin();
             user.Show();
             this.Close();
         }

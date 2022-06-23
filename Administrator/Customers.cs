@@ -61,7 +61,9 @@ namespace BreadFantasy.Administrator
 
         private void back_Click(object sender, EventArgs e)
         {
-
+            Admin admin = new Admin();
+            admin.Show();
+            this.Close();
         }
 
         private void имя___ЕленаToolStripButton_Click(object sender, EventArgs e)
