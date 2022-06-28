@@ -46,6 +46,7 @@ namespace BreadFantasy
             {
                 MessageBox.Show("Не верно введен логин или пароль");
                 password.Clear();
+                login.Clear();
             }
         }
 
